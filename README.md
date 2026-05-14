@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aditya Prabhudessai — Portfolio
 
-## Getting Started
+Premium AI Engineer workspace-style portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## Design System
+
+- **Aesthetic**: Linear × Raycast — dark monochrome, warm amber accent
+- **Typography**: Syne (display) + Geist Mono (code/UI)
+- **Motion**: Framer Motion — stagger reveals, layout animations, smooth modals
+- **Color**: `#0a0a0a` base · `#e8c547` accent · `#f0f0f0` text
+
+## Features
+
+- ⌘K Command palette with keyboard navigation
+- Scroll-spy sidebar with active section indicator
+- Animated workspace panels (Linear-style)
+- Project deep-dive modals
+- Terminal hero widget
+- Typewriter role animation
+- Scanline CSS effect on panels
+- Responsive layout (mobile-first)
+- Green availability status indicator
+
+## Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Add fonts (Geist — from Vercel)
+# Download from https://vercel.com/font and place in src/app/fonts/
+# GeistVF.woff + GeistMonoVF.woff
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fonts Note
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses Geist Sans + Geist Mono (from Vercel) loaded as local fonts.
+If you don't have them, the fallback is `system-ui` / `monospace` — works fine.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To use Geist:
+1. Download from https://vercel.com/font
+2. Place `GeistVF.woff` and `GeistMonoVF.woff` in `src/app/fonts/`
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+All content is in `src/lib/data.ts`:
+- `profile` — name, links, email
+- `projects` — add/edit/remove projects
+- `experience` — work history
+- `skills` — stack categories
+- `commandPaletteItems` — palette nav
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Lucide React**
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy to Vercel instantly:
+```bash
+npx vercel
+```

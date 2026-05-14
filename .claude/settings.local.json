@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-String \"geist\")",
+      "Bash(npx next *)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\(JSON.stringify\\(p.dependencies, null, 2\\)\\)\")",
+      "Bash(Remove-Item \"C:\\\\Users\\\\Aditya\\\\Desktop\\\\portfolio-2.0\\\\src\\\\components\\\\ui\\\\CommandPalette.tsx\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\Aditya\\\\Desktop\\\\portfolio-2.0\\\\src\\\\components\\\\layout\\\\StatusBar.tsx\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\Aditya\\\\Desktop\\\\portfolio-2.0\\\\src\\\\components\\\\layout\\\\Sidebar.tsx\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\Aditya\\\\Desktop\\\\portfolio-2.0\\\\src\\\\hooks\\\\useCommandPalette.ts\" -Force)",
+      "Bash(cp /c/Users/Aditya/Desktop/portfolio/aditya.jpg /c/Users/Aditya/Desktop/portfolio-2.0/public/aditya.jpg)",
+      "Bash(cp /c/Users/Aditya/Desktop/portfolio/logo.png /c/Users/Aditya/Desktop/portfolio-2.0/public/logo.png)",
+      "Bash(npm install *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -s http://localhost:3002)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(curl -s \"http://localhost:3001/_next/static/css/app/layout.css\")",
+      "Bash(npx tsc *)",
+      "Bash(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "Bash(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "Bash(Write-Host \"Killed node processes\")",
+      "PowerShell(Get-Process *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(node -e \"const c = require\\('./tailwind.config.ts'\\); console.log\\('config loaded'\\)\")",
+      "Bash(node -e \"const p = require\\('./node_modules/lenis/package.json'\\); console.log\\(p.version\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('gsap:', p.dependencies.gsap, '\\\\nlenis:', p.dependencies.lenis, '\\\\nframer:', p.dependencies['framer-motion']\\)\")",
+      "Bash(npm run *)",
+      "Read(//c/Users/Aditya/Desktop/portfolio/**)",
+      "Bash(dir \"C:\\\\Users\\\\Aditya\\\\Desktop\\\\portfolio\")"
+    ]
+  }
+}
