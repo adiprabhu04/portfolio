@@ -1,73 +1,128 @@
-# Aditya Prabhudessai — Portfolio
+# Aditya Prabhudessai — Portfolio 2.0
 
-Premium AI Engineer workspace-style portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+A portfolio website I built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-## Design System
+I wanted this one to feel less like a basic developer portfolio and more like an interactive experience — smooth motion, cinematic visuals, clean typography, and a UI that actually feels alive instead of another grid of cards on a dark background.
 
-- **Aesthetic**: Linear × Raycast — dark monochrome, warm amber accent
-- **Typography**: Syne (display) + Geist Mono (code/UI)
-- **Motion**: Framer Motion — stagger reveals, layout animations, smooth modals
-- **Color**: `#0a0a0a` base · `#e8c547` accent · `#f0f0f0` text
+---
 
-## Features
+## 🌐 Live Demo
 
-- ⌘K Command palette with keyboard navigation
-- Scroll-spy sidebar with active section indicator
-- Animated workspace panels (Linear-style)
-- Project deep-dive modals
-- Terminal hero widget
-- Typewriter role animation
-- Scanline CSS effect on panels
-- Responsive layout (mobile-first)
-- Green availability status indicator
+https://adityap.me/
+---
 
-## Setup
+## ✨ What's Inside
+
+- Smooth animated UI with Framer Motion
+- Dark / Light theme toggle
+- Responsive design across devices
+- Scrollspy navigation
+- Ambient animated backgrounds
+- GitHub contribution integration
+- Interactive project sections
+- Command palette inspired interactions
+- Cinematic landing section
+- Clean and minimal layout system
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+
+### Animation & UI
+- Framer Motion
+- Lucide React
+- Custom motion effects
+
+### Deployment
+- Vercel
+
+---
+
+## 🚀 Running Locally
+
+Clone the repo:
 
 ```bash
-# Install dependencies
+git clone https://github.com/adiprabhu04/portfolio-2.0.git
+cd portfolio-2.0
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
 
-# Add fonts (Geist — from Vercel)
-# Download from https://vercel.com/font and place in src/app/fonts/
-# GeistVF.woff + GeistMonoVF.woff
+Start development server:
 
-# Run dev server
+```bash
 npm run dev
+```
 
-# Build for production
+Production build:
+
+```bash
 npm run build
 npm start
 ```
 
-## Fonts Note
+---
 
-This project uses Geist Sans + Geist Mono (from Vercel) loaded as local fonts.
-If you don't have them, the fallback is `system-ui` / `monospace` — works fine.
+## 📁 Folder Structure
 
-To use Geist:
-1. Download from https://vercel.com/font
-2. Place `GeistVF.woff` and `GeistMonoVF.woff` in `src/app/fonts/`
+```txt
+src/
+ ├── app/
+ ├── components/
+ ├── hooks/
+ ├── lib/
+ └── styles/
+```
 
-## Customization
+---
 
-All content is in `src/lib/data.ts`:
-- `profile` — name, links, email
-- `projects` — add/edit/remove projects
-- `experience` — work history
-- `skills` — stack categories
-- `commandPaletteItems` — palette nav
+## 💭 Why I Built This
 
-## Tech Stack
+Most portfolio websites feel very template-y now.
 
-- **Next.js 14** (App Router)
-- **TypeScript**
-- **Tailwind CSS**
-- **Framer Motion**
-- **Lucide React**
+I wanted to experiment more with:
+- motion design
+- visual storytelling
+- interactive layouts
+- smoother UX
+- premium-looking UI systems
 
-## Deployment
+This project was basically me trying to combine frontend engineering with the kind of design direction you usually see in high-end product websites.
 
-Deploy to Vercel instantly:
+Also yes, way too much time was spent tweaking blur values and animations at 3 AM.
+
+---
+
+## ▲ Deployment
+
+Optimized for Vercel.
+
 ```bash
 npx vercel
 ```
+
+---
+
+## 📬 Contact
+
+Aditya Prabhudessai  
+South Goa, India
+
+- GitHub: https://github.com/adiprabhu04
+- LinkedIn: https://www.linkedin.com/in/adityaprabhudessai/
+- Portfolio: (https://adityap.me/)
+
+---
+
+Built with caffeine, Framer Motion, and several unnecessary redesign decisions.
